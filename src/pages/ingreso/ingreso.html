@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button></button>
+    </ion-buttons>
+    <ion-title>
+      ingreso
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding style="background:url(assets/img/wJL2ngNJSwiTps4z8uXE_Captura.PNG) no-repeat center;background-size:cover;" id="page5">
+  <div class="spacer" style="width:300px;height:75px;" id="ingreso-spacer2"></div>
+  <img src="assets/img/wpqqqBOWQJy38URF7P0N_Bustrack.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
+  <div class="spacer" style="width:300px;height:60px;" id="ingreso-spacer3"></div>
+  <h4 id="ingreso-heading1" style="color:#3C8120;font-weight:400;text-align:center;">
+    Ingresar con:
+  </h4>
+  <button id="ingreso-button2" ion-button color="assertive" block>
+    Google +
+  </button>
+  <div class="spacer" style="width:300px;height:13px;" id="ingreso-spacer4"></div>
+  <button ion-button  outline (click) = "signInWithFacebook()" id="ingreso-button3" ion-button color="positive" block>
+    Facebook
+  </button>
+  <ion-list>
+		<ion-item class="text" *ngFor="let item of items | async">
+			{{item | json}}
+		</ion-item>
+	</ion-list>
+</ion-content>
